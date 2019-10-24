@@ -2,31 +2,31 @@
 // Importing specific gulp API functions lets us write them below as series() instead of gulp.series()
 'use strict';
 const {src, dest, watch, series, parallel } = require('gulp');
-const log = require('fancy-log');
-const colors = require('ansi-colors');
-const browserSync = require('browser-sync').create();
-const sass = require('gulp-sass');
-const bourbon = require('node-bourbon').includePaths;
-const cssmin = require('gulp-cssmin');
-const rename = require('gulp-rename');
-const concat = require('gulp-concat');
-const del = require('del');
-const panini = require('panini');
-const uglify = require('gulp-uglify-es').default;
-const sourcemaps = require('gulp-sourcemaps');
-const imagemin = require('gulp-imagemin');
-const removeCode = require('gulp-remove-code');
-const removeLog = require('gulp-remove-logging');
-const prettyHtml = require('gulp-pretty-html');
-const sassLint = require('gulp-sass-lint');
-const htmllint = require('gulp-htmllint');
-const jshint = require('gulp-jshint');
-const htmlreplace = require('gulp-html-replace');
-const newer = require('gulp-newer');
-const autoprefixer = require('gulp-autoprefixer');
+const log           = require('fancy-log');
+const colors        = require('ansi-colors');
+const browserSync   = require('browser-sync').create();
+const sass          = require('gulp-sass');
+const bourbon       = require('node-bourbon').includePaths;
+const cssmin        = require('gulp-cssmin');
+const rename        = require('gulp-rename');
+const concat        = require('gulp-concat');
+const del           = require('del');
+const panini        = require('panini');
+const uglify        = require('gulp-uglify-es').default;
+const sourcemaps    = require('gulp-sourcemaps');
+const imagemin      = require('gulp-imagemin');
+const removeCode    = require('gulp-remove-code');
+const removeLog     = require('gulp-remove-logging');
+const prettyHtml    = require('gulp-pretty-html');
+const sassLint      = require('gulp-sass-lint');
+const htmllint      = require('gulp-htmllint');
+const jshint        = require('gulp-jshint');
+const htmlreplace   = require('gulp-html-replace');
+const newer         = require('gulp-newer');
+const autoprefixer  = require('gulp-autoprefixer');
 const accessibility = require('gulp-accessibility');
-const babel = require('gulp-babel');
-const ghPages = require('gulp-gh-pages');
+const babel         = require('gulp-babel');
+const ghPages       = require('gulp-gh-pages');
 
 // File paths
 const files = {
@@ -141,7 +141,7 @@ function browserSyncInit(done) {
 // function deploy() {
 //   return src('/*')
 //     .pipe(ghPages({
-//       remoteUrl: 'https://github.com/johndavemanuel/bootstrap4-gulp-starter-template.git',
+//       remoteUrl: 'https://github.com/dmoncado/le-boilerplate.git',
 //       branch: 'master',
 //       message: 'Automated push of contents via gulp'
 //     }));
@@ -209,14 +209,14 @@ function cleanDist(done) {
 }
 
 // CREATE DOCS FOLDER FOR DEMO
-function generateDocs() {
-  console.log('---------------CREATING DOCS---------------');
-  return src([
-	  'dist/**/*',
-	])
-	.pipe(dest('docs'))
-	.pipe(browserSync.stream());
-}
+// function generateDocs() {
+//   console.log('---------------CREATING DOCS---------------');
+//   return src([
+// 	  'dist/**/*',
+// 	])
+// 	.pipe(dest('docs'))
+// 	.pipe(browserSync.stream());
+// }
 
 // ACCESSIBILITY CHECK
 function HTMLAccessibility() {
