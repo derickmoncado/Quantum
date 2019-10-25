@@ -16,7 +16,7 @@ const uglify        = require('gulp-uglify-es').default;
 const sourcemaps    = require('gulp-sourcemaps');
 const imagemin      = require('gulp-imagemin');
 const removeCode    = require('gulp-remove-code');
-const removeLog     = require('gulp-remove-logging');
+//const removeLog     = require('gulp-remove-logging');
 const prettyHtml    = require('gulp-pretty-html');
 const sassLint      = require('gulp-sass-lint');
 const htmllint      = require('gulp-htmllint');
@@ -59,7 +59,7 @@ function compileHTML() {
 	.pipe(panini({
 	  root: 'src/pages/',
 	  layouts: 'src/layouts/',
-	  partials: 'src/partials/', // not using
+	  partials: 'src/partials/',
 	  helpers: 'src/helpers/', // not using
 	  data: 'src/data/' // not using
 	}))
@@ -83,7 +83,7 @@ function resetPages(done) {
   done();
 }
 
-// SASS LINT
+// SASS LINT - Lint Task
 function scssLint() {
   console.log('---------------SASS LINTING---------------');
   return src('src/assets/scss/**/*.scss')
@@ -94,7 +94,7 @@ function scssLint() {
 	.pipe(sassLint.failOnError());
 }
 
-// HTML LINTER
+// HTML LINTER - Lint Task
 function htmlLint() {
   console.log('---------------HTML LINTING---------------');
   return src('dist/*.html')
@@ -112,7 +112,7 @@ function htmllintReporter(filepath, issues) {
   }
 }
 
-// JS LINTER
+// JS LINTER - Lint Task
 function jsLint() {
   return src('src/assets/js/*.js')
 	.pipe(jshint())
@@ -124,7 +124,7 @@ function watchFiles() {
   watch('src/**/*.html', compileHTML);
   watch(['src/assets/scss/**/*.scss', 'src/assets/scss/*.scss'] , compileSCSS);
   watch('src/assets/js/*.js', compileJS);
-  watch('src/assets/img/**/*', copyImages);
+  watch('src/assets/images/**/*', copyImages);
 }
 
 
@@ -132,6 +132,7 @@ function watchFiles() {
 function browserSyncInit(done) {
   console.log('---------------BROWSER SYNC---------------');
   browserSync.init({
+	notify: false,
 	server: './dist'
   });
   return done();
@@ -147,15 +148,14 @@ function browserSyncInit(done) {
 //     }));
 // }
 
-// ------------ OPTIMIZATION TASKS -------------
-
+// --------------------- OPTIMIZATION TASKS ---------------------
 // COPIES AND MINIFY IMAGE TO DIST
 function copyImages() {
   console.log('---------------OPTIMIZING IMAGES---------------');
-  return src('src/assets/img/**/*.+(png|jpg|jpeg|gif|svg)')
-	.pipe(newer('dist/assets/img/'))
+  return src('src/assets/images/**/*.+(png|jpg|jpeg|gif|svg)')
+	.pipe(newer('dist/assets/images/'))
 	.pipe(imagemin())
-	.pipe(dest('dist/assets/img/'))
+	.pipe(dest('dist/assets/images/'))
 	.pipe(browserSync.stream());
 }
 
@@ -208,15 +208,15 @@ function cleanDist(done) {
   return done();
 }
 
-// CREATE DOCS FOLDER FOR DEMO
-// function generateDocs() {
-//   console.log('---------------CREATING DOCS---------------');
-//   return src([
-// 	  'dist/**/*',
-// 	])
-// 	.pipe(dest('docs'))
-// 	.pipe(browserSync.stream());
-// }
+// CREATE DOCS FOLDER FOR DEMO - Not used (removed from 'gulp prod')
+function generateDocs() {
+  console.log('---------------CREATING DOCS---------------');
+  return src([
+	  'dist/**/*',
+	])
+	.pipe(dest('docs'))
+	.pipe(browserSync.stream());
+}
 
 // ACCESSIBILITY CHECK
 function HTMLAccessibility() {
@@ -234,8 +234,8 @@ function HTMLAccessibility() {
 	.pipe(dest('accessibility-reports'));
 }
 
-// ------------ PRODUCTION TASKS -------------
 
+// --------------------- PRODUCTION TASKS ---------------------
 // CHANGE TO MINIFIED VERSIONS OF JS AND CSS
 function renameSources() {
   console.log('---------------RENAMING SOURCES---------------');
