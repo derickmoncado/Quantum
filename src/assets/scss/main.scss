@@ -1,39 +1,36 @@
 @charset 'UTF-8';
 
-// 0. Import Boubon
-@import 'bourbon/bourbon.scss';
-
-// 1. Configuration and helpers
+// Abstracs (utilities)
 @import
-  'abstracts/variables',
-  'abstracts/functions',
-  'abstracts/mixins';
+	'abstracts/variables',
+	'abstracts/functions',
+	'abstracts/mixins';
 
-// 2. Vendors
+// Base
 @import
-  'vendors/normalize',
-  'vendors/bootstrap';
+	'base/fonts',
+	'base/global',
+	'base/helpers',
+	'base/typography';
 
-// 3. Base stuff
+// Bourbon
 @import
-  'base/base',
-  'base/fonts',
-  'base/typography',
-  'base/helpers';
+	'bourbon/bourbon.scss';
 
-// 4. Layout-related sections
+// Components
 @import
-  'layout/header',
-  'layout/footer';
+	'components/buttons';
 
-// 5. Components
+// Layout
 @import
-  'components/button';
+	'layout/footer',
+	'layout/header';
 
-// 6. Page-specific styles
+// Page
 @import
-  'pages/home';
+	'pages/home';
 
-// 7. Themes
+// Vendors
 @import
-  'themes/default';
+	'vendors/bootstrap',
+	'vendors/normalize';

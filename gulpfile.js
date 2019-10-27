@@ -16,7 +16,6 @@ const uglify        = require('gulp-uglify-es').default;
 const sourcemaps    = require('gulp-sourcemaps');
 const imagemin      = require('gulp-imagemin');
 const removeCode    = require('gulp-remove-code');
-//const removeLog     = require('gulp-remove-logging');
 const prettyHtml    = require('gulp-pretty-html');
 const sassLint      = require('gulp-sass-lint');
 const htmllint      = require('gulp-htmllint');
@@ -34,8 +33,7 @@ const files = {
   jsPath: 'app/js/**/*.js'
 }
 
-// ------------ DEVELOPMENT TASKS -------------
-
+/* --------------------- DEV TASKS --------------------- */
 // COMPILE SCSS INTO CSS
 function compileSCSS() {
   console.log('---------------COMPILING SCSS---------------');
@@ -127,7 +125,6 @@ function watchFiles() {
   watch('src/assets/images/**/*', copyImages);
 }
 
-
 // BROWSER SYNC
 function browserSyncInit(done) {
   console.log('---------------BROWSER SYNC---------------');
@@ -138,15 +135,6 @@ function browserSyncInit(done) {
   return done();
 }
 
-// DEPLOY TO GIT
-// function deploy() {
-//   return src('/*')
-//     .pipe(ghPages({
-//       remoteUrl: 'https://github.com/dmoncado/le-boilerplate.git',
-//       branch: 'master',
-//       message: 'Automated push of contents via gulp'
-//     }));
-// }
 
 // --------------------- OPTIMIZATION TASKS ---------------------
 // COPIES AND MINIFY IMAGE TO DIST
@@ -235,7 +223,7 @@ function HTMLAccessibility() {
 }
 
 
-// --------------------- PRODUCTION TASKS ---------------------
+/* --------------------- PROD TASKS --------------------- */
 // CHANGE TO MINIFIED VERSIONS OF JS AND CSS
 function renameSources() {
   console.log('---------------RENAMING SOURCES---------------');
@@ -267,7 +255,6 @@ function concatScripts() {
 function minifyScripts() {
   console.log('---------------MINIFY SCRIPTS---------------');
   return src('dist/assets/js/main.js')
-	.pipe(removeLog())
 	.pipe(removeCode({
 	  production: true
 	}))
