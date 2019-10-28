@@ -1,5 +1,7 @@
-# Frontend Start Kit
+# Frontend Starter Kit
 A Bootstrapped, Gulp-powered, Sassified, project boilerplate with Browsersync and hot reloading. Built on top of Handlebars.js for HTML templating.
+
+### Features
 
 * Bootstrap 4
 * Gulp 4
@@ -27,9 +29,9 @@ The template is built with Sass and Gulp build system with these features:
 
 ### Requirements
 
-To use this template, your computer needs:
+To use this template, your will need:
 
--	Node.js is used to run the build processes. https://nodejs.org/en/download/
+-	Node.js is used to run the build processes.
 -   Test: run ` node -v ` in the terminal
 -	Npm (Node comes with npm installed so you should have a version of npm.) Used to manage development dependencies.
 -   Test: run ` npm -v`  in the terminal
@@ -39,7 +41,7 @@ To use this template, your computer needs:
 
 ### Installing:
 
-- Clone this repo: `git clone https://github.com/johndavemanuel/bootstrap-gulp-starter-template`
+- Clone this repo: `git clone https://github.com/dmoncado/frontend-starter-kit`
 - Navigate into the repo directory: `cd frontend-start-kit`
 - Install all node packages: `npm install`
 - Run `gulp dev`
@@ -53,7 +55,6 @@ To use this template, your computer needs:
 - `node_modules` - front-end dependencies
 - `src/` - contains all of your core, working files—static assets, pages, templates, etc
 - `src/assets/` - scss files, JS files, images, and fonts are here
-- `src/data/` - external data
 - `src/layouts/` - HTML layouts templates
 - `src/pages/` - site pages
 - `src/partials/` - handlebars partials files.
