@@ -1,5 +1,10 @@
 /* line 4, src/assets/scss/base/_fonts.scss */
 body {
+  color: pink !important;
+}
+
+/* line 9, src/assets/scss/base/_fonts.scss */
+.just-testing {
   color: red !important;
 }
 
