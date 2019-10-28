@@ -37,7 +37,7 @@ const files = {
 // COMPILE SCSS INTO CSS
 function compileSCSS() {
   console.log('---------------COMPILING SCSS---------------');
-  return src(['src/assets/scss/main.scss', 'src/assets/scss/rtl.scss'])
+  return src('src/assets/scss/main.scss')
 	.pipe(sass({
 	  outputStyle: 'expanded',
 	  sourceComments: 'map',

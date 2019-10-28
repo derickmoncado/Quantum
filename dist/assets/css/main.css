@@ -1,3 +1,8 @@
+/* line 4, src/assets/scss/base/_fonts.scss */
+body {
+  color: red !important;
+}
+
 /**
  * Set up a decent box model on the root element
  */
