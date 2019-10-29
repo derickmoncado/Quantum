@@ -45,6 +45,7 @@ function compileSCSS() {
 	  includePaths: bourbon
 	}).on('error', sass.logError))
 	.pipe(autoprefixer('last 2 versions'))
+    .pipe(sourcemaps.write())
 	.pipe(dest('dist/assets/css'))
 	.pipe(browserSync.stream());
 }
