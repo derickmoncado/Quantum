@@ -1,11 +1,12 @@
 # Frontend Starter Kit
-A Bootstrapped, Gulp-powered, Sassified, project boilerplate with Browsersync and hot reloading. Built on top of Handlebars.js for HTML templating.
+A Bootstrapped, Gulp-powered, Sassified, frontend project boilerplate with Browsersync, hot reloading, and the Bourbon Sass library. All built on top of Handlebars.js for HTML templating.
 
 ### Features
 
 * Bootstrap 4
 * Gulp 4
 * Sass
+* Bourbon
 * HTML templating (Handlebars)
 * Autoprefixing
 * Sourcemaps

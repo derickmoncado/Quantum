@@ -5,10 +5,11 @@
  A better way is to set font-size: 62.5%. Because 62.5% of 16px is 10px. Which makes 1rem = 10px.
  CALCULATION: Element font size in rem x 16px;
  */
-  body {
-	color: $text-color;
-	font: normal 100% / 1.4 $text-font-stack;
-  }
-
-
 @import "bourbon/bourbon";
+
+body {
+    color: $text-color;
+    font: normal 100% / 1.4 $text-font-stack;
+    font-family: $font-stack-helvetica;
+    color: red;
+}
