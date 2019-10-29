@@ -1,10 +1,19 @@
 @charset 'UTF-8';
 
+// Vendors (Imported first so they can be overriden)
+@import
+	'vendors/bootstrap',
+	'vendors/normalize';
+
 // Abstracs (utilities)
 @import
 	'abstracts/variables',
 	'abstracts/functions',
 	'abstracts/mixins';
+
+// Bourbon
+@import
+	'bourbon/bourbon.scss';
 
 // Base
 @import
@@ -12,10 +21,6 @@
 	'base/global',
 	'base/helpers',
 	'base/typography';
-
-// Bourbon
-@import
-	'bourbon/bourbon.scss';
 
 // Components
 @import
@@ -29,8 +34,3 @@
 // Page
 @import
 	'pages/home';
-
-// Vendors
-@import
-	'vendors/bootstrap',
-	'vendors/normalize';
