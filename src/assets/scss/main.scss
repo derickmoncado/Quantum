@@ -2,35 +2,37 @@
 
 // Vendors (Imported first so they can be overriden)
 @import
-	'vendors/bootstrap',
-	'vendors/normalize';
+	'vendors/bootstrap',	// Bootstrap
+	'vendors/normalize';	// Normalize CSS
 
 // Abstracs (utilities)
 @import
-	'abstracts/variables',
-	'abstracts/functions',
-	'abstracts/mixins';
+	'abstracts/variables',	// Sass Variables
+	'abstracts/mixins';		// Sass Mixins
 
 // Bourbon
 @import
-	'bourbon/bourbon.scss';
+	'bourbon/bourbon.scss';	// Bourbon Library
 
 // Base
 @import
-	'base/fonts',
-	'base/global',
-	'base/helpers',
-	'base/typography';
+	'base/fonts',			// Fonts
+	'base/global',			// Global Styles
+	'base/helpers',			// Helper Styles
+	'base/typography';		// Typography
 
 // Components
 @import
-	'components/buttons';
+	'components/buttons',	// Buttons
+	'components/carousel',	// Carousel
+	'components/slider';	// Slider
 
 // Layout
 @import
-	'layout/footer',
-	'layout/header';
+	'layout/footer',		// Footer specific styles
+	'layout/nav',			// Nav specific styles
+	'layout/header';		// Header specific styles
 
 // Page
 @import
-	'pages/home';
+	'pages/home';			// Page specific styles

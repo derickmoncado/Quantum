@@ -1,6 +1,11 @@
 // -----------------------------------------------------------------------------
-// This file contains all styles related to the footer of the site/application.
+// Navigation
 // -----------------------------------------------------------------------------
-.footer {
-    border-top: 1px solid $light-grey;
+
+.navbar {
+    padding: 20px;
+}
+
+.fixed-top {
+    border-bottom: 1px solid $light-grey;
 }
