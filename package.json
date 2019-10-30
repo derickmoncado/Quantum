@@ -1,14 +1,14 @@
 {
-	"name": "bootstrap4-gulp3-starter-template",
+	"name": "Quantum — a Frontend Starter Kit",
 	"version": "1.0.0",
-	"description": "a bootstrap 4 boiler plate with sass, concatenation, minification, autoprefixer, sourcemaps, browser-sync, git and gulp task runner",
+	"description": "Quantum is a Bootstrapped, Gulp-powered, Sassified, frontend boilerplate with Browsersync, hot reloading, and the Bourbon Sass library. All built on top of Handlebars.js for easy HTML templating.",
 	"main": "index.js",
 	"scripts": {},
 	"author": "Derick Moncado",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/dmoncado/le-boilerplate"
+		"url": "https://github.com/dmoncado/quantum"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.6.4",

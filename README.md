@@ -1,5 +1,5 @@
-# Frontend Starter Kit
-A Bootstrapped, Gulp-powered, Sassified, frontend project boilerplate with Browsersync, hot reloading, and the Bourbon Sass library. All built on top of Handlebars.js for HTML templating.
+# Quantum — a Frontend Starter Kit
+Quantum is a Bootstrapped, Gulp-powered, Sassified, frontend boilerplate with Browsersync, hot reloading, and the Bourbon Sass library. All built on top of Handlebars.js for easy HTML templating.
 
 ### Features
 
