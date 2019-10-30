@@ -1,13 +1,13 @@
 # Quantum — A Front End Starter Kit
-Quantum is a Bootstrapped, Gulp-powered, Sassified, frontend boilerplate with Browsersync, hot reloading, and the Bourbon Sass library. All built on top of Handlebars.js for easy HTML templating.
+Quantum is a Bootstrapped, Gulp-powered, Sassified, front end boilerplate with Browsersync, hot reloading, and the Bourbon Sass library. All built on top of Handlebars.js for easy HTML templating.
 
-### Features
+### Baked-in Features
 
 * Bootstrap 4
 * Gulp 4
 * Sass
 * Bourbon
-* HTML templating (Handlebars)
+* Handlebars HTML templating
 * Autoprefixing
 * Sourcemaps
 * Concatenation
@@ -15,6 +15,7 @@ Quantum is a Bootstrapped, Gulp-powered, Sassified, frontend boilerplate with Br
 * Linting
 * Accessibility
 * Browsersync w/ hot reloading
+* Mobile first
 
 Changes should be commited to `src/` files only.
 
@@ -42,8 +43,8 @@ To use this template, your will need:
 
 ### Installing:
 
-- Clone this repo: `git clone https://github.com/dmoncado/frontend-starter-kit`
-- Navigate into the repo directory: `cd frontend-start-kit`
+- Clone this repo: `git clone https://github.com/dmoncado/quantum`
+- Navigate into the repo directory: `cd quantum`
 - Install all node packages: `npm install`
 - Run `gulp dev`
 - Your site is now viewable at this URL: http://localhost:3000
