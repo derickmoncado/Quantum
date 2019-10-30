@@ -1,78 +1,78 @@
 <!--- Base layout, used on every page. --->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Frontend Starter Kit</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="author" content="Derick Moncado">
-    <meta name="description" content="A Bootstrapped, Gulp-powered, Sassified, frontend project boilerplate with Browsersync, hot reloading, and the Bourbon Sass library. All built on top of Handlebars.js for HTML templating.">
-    <meta name="keywords" content="keywords,here">
-    <link rel="favicon" href="images/favicons/favicon.ico" type="">
+	<title>Frontend Starter Kit</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="author" content="Derick Moncado">
+	<meta name="description" content="A Bootstrapped, Gulp-powered, Sassified, frontend project boilerplate with Browsersync, hot reloading, and the Bourbon Sass library. All built on top of Handlebars.js for HTML templating.">
+	<meta name="keywords" content="keywords,here">
+	<link rel="favicon" href="images/favicons/favicon.ico" type="">
 
-    <!--- CSS --->
-    <link rel="stylesheet" href="assets/vendor/css/font-awesome5.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+	<!--- CSS --->
+	<link rel="stylesheet" href="assets/vendor/css/font-awesome5.css">
+	<link rel="stylesheet" href="assets/css/main.css">
 
-    <!--- Favicon --->
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+	<!--- Favicon --->
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 </head>
 
 <body>
-    <!--- Navigation --->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-        <div class="container">
-            <a class="navbar-brand font-weight-bolder mr-3" href="index.html">Frontend Starter Kit</a>
+	<!--- Navigation --->
+	<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+		<div class="container">
+			<div class="site-logo">
+				<a class="site-logo__link mr-3" href="index.html"><span class="sr-only">Quantum</span></a>
+			</div>
+	
+			<button class="navbar-light navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-default" aria-controls="navbars-default" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+	
+			<div class="collapse navbar-collapse" id="navbars-default">
+				<ul class="navbar-nav ml-auto align-items-center">
+					<li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-            <button class="navbar-light navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-default" aria-controls="navbars-default" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+	<main role="main">
+		
+		<!--- Header --->
+		<!--- Header --->
+		<header>
+			<div class="container text-center">
+				<h1 class="display-3">Header</h1>
+			</div>
+		</header>
+		
+		<!--- Body --->
+		<section>
+			<div class="container">
+				<h2 class="display-4">Home</h2>
+				<p class="lead">This is body, here is a <a href="www.google.com">link</a></p>
+			</div>
+		</section>
+		
+	</main>
 
-            <div class="collapse navbar-collapse" id="navbars-default">
-                <ul class="navbar-nav ml-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <main role="main">
-
-        <!--- Header --->
-        <!--- Header --->
-        <header>
-            <div class="container text-center">
-                <h1 class="display-3">Header</h1>
-            </div>
-        </header>
-
-        <!--- Body --->
-        <section>
-            <div class="container">
-                <h2 class="display-4">Home</h2>
-                <p class="lead">This is body, here is a <a href="www.google.com">link</a></p>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer pt-5 pb-5 text-center">
-        <div class="container">
-            <p>Footer</p>
-        </div>
-    </footer>
-    <!-- Scripts -->
-    <script src="assets/vendor/js/jquery.js"></script>
-    <script src="assets/vendor/js/popper.js"></script>
-    <script src="assets/vendor/js/bootstrap.js"></script>
-    <script src="assets/js/custom.js"></script>
+	<footer class="footer pt-5 pb-5 text-center">
+		<div class="container">
+			<p>Footer</p>
+		</div>
+	</footer>
+	<!-- Scripts -->
+	<script src="assets/vendor/js/jquery.js"></script>
+	<script src="assets/vendor/js/popper.js"></script>
+	<script src="assets/vendor/js/bootstrap.js"></script>
+	<script src="assets/js/custom.js"></script>
 </body>
-
 </html>

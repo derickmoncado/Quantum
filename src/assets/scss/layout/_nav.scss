@@ -9,3 +9,22 @@
 .fixed-top {
     border-bottom: 1px solid $light-grey;
 }
+
+$logo-height: 40px;
+$logo-width: 160px;
+
+.site-logo {
+	height: $logo-height;
+	width: $logo-width;
+
+    &__link {
+        background-image: url('../images/quantum-logo.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        display: block;
+        height: inherit;
+        width: inherit;
+        background-size: $logo-width auto;
+    }
+}
