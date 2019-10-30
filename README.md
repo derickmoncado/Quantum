@@ -32,9 +32,9 @@ The template is built with Sass and Gulp build system with these features:
 
 To use this template, your will need:
 
--	Node.js is used to run the build processes.
+-	Node.js
 -   Test: run ` node -v ` in the terminal
--	Npm (Node comes with npm installed so you should have a version of npm.) Used to manage development dependencies.
+-	Npm (Node comes with npm installed so you should have a version of npm.)
 -   Test: run ` npm -v`  in the terminal
 -	Gulp – task runner
 	`npm install -g gulp`
@@ -52,10 +52,10 @@ To use this template, your will need:
 
 ### Folder Structure:
 
-- `dist/` - compiled distribution files
-- `node_modules` - front-end dependencies
-- `src/` - contains all of your core, working files—static assets, pages, templates, etc
-- `src/assets/` - scss files, JS files, images, and fonts are here
+- `dist/` - compiled files
+- `node_modules` - front-end dependencies (.gitignore'd)
+- `src/` - contains all of your core, working files—static assets, pages, templates, etc.
+- `src/assets/` - scss files, JS files, images, and fonts
 - `src/layouts/` - HTML layouts templates
 - `src/pages/` - site pages
 - `src/partials/` - handlebars partials files.
