@@ -152,7 +152,7 @@ function copyImages() {
 function copyFont() {
   console.log('---------------COPYING FONTS INTO DIST FOLDER---------------');
   return src([
-	  'src/assets/font/*',
+	  'src/assets/fonts/*',
 	])
 	.pipe(dest('dist/assets/fonts'))
 	.pipe(browserSync.stream());
