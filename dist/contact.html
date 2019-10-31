@@ -3,13 +3,13 @@
 <html lang="en">
 
 <head>
-    <title>Frontend Starter Kit</title>
+    <title>Quantum - A Front End Starter Kit</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="author" content="Derick Moncado">
-    <meta name="description" content="A Bootstrapped, Gulp-powered, Sassified, frontend project boilerplate with Browsersync, hot reloading, and the Bourbon Sass library. All built on top of Handlebars.js for HTML templating.">
+    <meta name="description" content="Quantum - A frontend framework that is focused on automated web developement.">
     <meta name="keywords" content="keywords,here">
     <link rel="favicon" href="images/favicons/favicon.ico" type="">
 
@@ -17,8 +17,10 @@
     <link rel="stylesheet" href="assets/vendor/css/font-awesome5.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
+    <!--- For after 'gulp prod' runs --->
+    <link rel="stylesheet" href="assets/css/main.min.css">
+
     <!--- Favicons --->
-    <!--- Favicons - generated with https://www.favicon-generator.org/ --->
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
@@ -74,16 +76,21 @@
 
     </main>
 
+    <!--- Footer --->
     <footer class="footer pt-5 pb-5 text-center">
         <div class="container">
             <p>Footer</p>
         </div>
     </footer>
-    <!-- Scripts -->
+
+    <!--- Scripts --->
     <script src="assets/vendor/js/jquery.js"></script>
     <script src="assets/vendor/js/popper.js"></script>
     <script src="assets/vendor/js/bootstrap.js"></script>
     <script src="assets/js/custom.js"></script>
+
+    <!--- For after 'gulp prod' runs --->
+    <script src="assets/js/main.min.js"></script>
 </body>
 
 </html>
