@@ -3,6 +3,8 @@
 $(document).ready(function() {
     //removeIf(production)
     console.log("document ready!");
+    //endRemoveIf(production)
+
     $('.home-slick-carousel').slick({
         dots: true,
 		mobileFirst: true,
@@ -10,5 +12,4 @@ $(document).ready(function() {
 		slidesToShow: 1,
 		slidesToScroll: 1
     });
-    //endRemoveIf(production)
 });
