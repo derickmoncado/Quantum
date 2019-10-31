@@ -243,6 +243,7 @@ function concatScripts() {
 	  'src/assets/vendor/js/jquery.js',
 	  'src/assets/vendor/js/popper.js',
 	  'src/assets/vendor/js/bootstrap.js',
+      'src/assets/vendor/js/slick.js',
 	  'src/assets/js/*'
 	])
 	.pipe(sourcemaps.init())
