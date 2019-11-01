@@ -1,15 +1,20 @@
 'use strict';
 
+let pathname = window.location.pathname; // Gets URL path and stores in pathname
+
 $(document).ready(function() {
+    console.log('document ready!');
     //removeIf(production)
         // Be careful putting code here!
     //endRemoveIf(production)
 
-    console.log('document ready!');
+    // For appending the 'active' class
+    $('.navbar-nav > li > a[href="'+pathname+'"]').parent().addClass('active');
 
-    $('.navbar-nav .nav-link').on('click', function() {
-        $('.navbar-nav').find('.active').removeClass('active');
-        $(this).addClass('active');
+    // For appending the 'active' class to dropdowns (the children)
+    $('.navbar-nav > li > a .dropdown-menu a').click(function() {
+        $(this).parent().removeClass("active");
+        $('.dropdown-item').addClass("XXXTESTINGXXX");
     });
 
     $('.home-slick-carousel').slick({
