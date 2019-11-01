@@ -53,7 +53,7 @@ To use this template, your will need:
 
 ### Folder Structure:
 
-- `dist/` - compiled files
+- `dist/` - compiled files (minified and concatenated only with `gulp prod`)
 - `node_modules` - front-end dependencies (.gitignore'd)
 - `src/` - contains all of your core, working files—static assets, pages, templates, etc.
 - `src/assets/` - scss files, JS files, images, and fonts

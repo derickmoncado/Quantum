@@ -1,1 +1,19 @@
-/node_modules
+# Node Modules dir
+node_modules
+
+# Folder config file
+Desktop.ini
+
+### Sass ###
+.sass-cache/
+*.css.map
+
+### JS maps ###
+*.js.map
+
+### Package lock ###
+package-lock.json
+
+### Custom Files ###
+dist/
+accessibility-reports/
