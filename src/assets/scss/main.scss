@@ -1,9 +1,11 @@
 @charset 'UTF-8';
 
-// Vendors (Imported first so they can be overriden) 
+// Vendors (Imported first so they can be overriden)
 @import
 	'vendors/bootstrap',	// Bootstrap
-	'vendors/normalize';	// Normalize CSS
+	'vendors/normalize',	// Normalize CSS
+	'vendors/slick',		// Slick
+	'vendors/slick-theme';	// Slick Theme
 
 // Abstracs (utilities)
 @import
