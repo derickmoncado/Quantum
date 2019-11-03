@@ -22,6 +22,7 @@ Quantum is a Bootstrapped, Gulp-powered, Sassified, front end boilerplate with B
 Changes should be commited to `src/` files only!
 
 ### How to use
+
 Primary Gulp tasks to run are:
 `gulp dev` for general development
 `gulp prod` for production builds (compiles, minifies, concatenates everything etc.)
@@ -30,9 +31,9 @@ There is also:
 `gulp linters` to run all linting tasks for HTML, SCSS, and JS
 `gulp accessibility` to run accessibility tasks that creates an accessibility report .txt file in a folder called `reports`
 
-### How to use
+### Details
 
-This starter kit is built with Sass and Gulp build system that have the following features:
+Quantum is a small starter kit that's built with Sass and Gulp build systems that have the following features:
 
 -	Handlebars HTML templates with Panini– Panini is a super simple flat file generator for use with Gulp. It compiles a series of HTML pages using a common layout. These pages can also include HTML partials, external Handlebars helpers, or external data as JSON.
 -	Sass compilation, prefixing with Autoprefixer, and JavaScript concatenation
