@@ -1,9 +1,6 @@
 # Node Modules dir
 node_modules
 
-# Folder config file
-Desktop.ini
-
 ### Sass ###
 .sass-cache/
 *.css.map
