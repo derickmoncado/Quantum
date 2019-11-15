@@ -1,7 +1,10 @@
-<!--- Footer ---> 
-<footer class="footer pt-5 pb-5 text-center">
+<!--- Footer --->
+<footer class="footer pt-5 pb-5 text-center" data-emergence="hidden">
 	<div class="container">
-		<p>Footer</p>
+		<h4>Footer</h4>
+		<p>
+			Has the Emergence.js data attribute appended to it.<br /> (background color changes when it comes 75% into viewport)
+		</p>
 	</div>
 </footer>
 
@@ -11,5 +14,11 @@
 <script src="{{root}}assets/vendor/js/popper.js"></script>
 <script src="{{root}}assets/vendor/js/bootstrap.js"></script>
 <script src="{{root}}assets/vendor/js/slick.js"></script>
+<script src="{{root}}assets/vendor/js/emergence.js"></script>
+<script>
+	  emergence.init({
+			elemCushion: 0.75, // how much of element needs to be visible (%) for emergence to kick in 
+	  });
+</script>
 <script src="{{root}}assets/js/custom.js"></script>
 <!-- endbuild -->

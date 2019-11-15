@@ -2,5 +2,14 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 .footer {
-    border-top: 1px solid $light-grey;
+	border-top: 1px solid $light-grey;
+}
+
+footer[data-emergence="hidden"] {
+	background-color: #404041;
+	color: #fff;
+}
+
+footer[data-emergence="visible"] {
+	background-color: #f2f2f2;
 }

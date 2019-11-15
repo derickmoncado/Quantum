@@ -9,7 +9,8 @@ $(document).ready(function () {
   // For appending the 'active' class
 
   $('.navbar-nav > li > a[href="' + pathname + '"]').parent().addClass('active');
-  $('.dropdown-menu > li > a[href="' + pathname + '"]').addClass('active');
+  $('.dropdown-menu > li > a[href="' + pathname + '"]').addClass('active'); // Initiate Slick
+
   $('.home-slick-carousel').slick({
     dots: true,
     mobileFirst: true,
