@@ -25,12 +25,12 @@ Changes should be commited to `src/` files only!
 ### How to use
 
 Primary Gulp tasks to run are:
-`gulp dev` for general development
-`gulp prod` for production builds (compiles, minifies, concatenates everything etc.)
+-	`gulp dev` for general development
+-	`gulp prod` for production builds (compiles, minifies, concatenates everything etc.)
 
 There is also:
-`gulp linters` to run all linting tasks for HTML, SCSS, and JS
-`gulp accessibility` to run accessibility tasks that creates an accessibility report .txt file in a folder called `reports`
+-	`gulp linters` to run all linting tasks for HTML, SCSS, and JS
+-	`gulp accessibility` to run accessibility tasks that creates an accessibility report .txt file in a folder called `reports`
 
 ### Details
 
