@@ -22,6 +22,7 @@ Quantum is a Bootstrapped, Gulp-powered, Sassified, front end boilerplate with B
 
 Changes should be commited to `src/` files only!
 
+
 ### How to use
 
 Primary Gulp tasks to run are:
@@ -31,6 +32,7 @@ Primary Gulp tasks to run are:
 There is also:
 -	`gulp linters` to run all linting tasks for HTML, SCSS, and JS
 -	`gulp accessibility` to run accessibility tasks that creates an accessibility report .txt file in a folder called `reports`
+
 
 ### Details
 
@@ -42,6 +44,7 @@ Quantum is a small starter kit that's built with Sass and Gulp build systems tha
 -   Emergence.js for control over the style of element when they ENTER the viewport.
 -	For production builds - CSS compression, JavaScript compression, Image compression and more..
 
+
 ### Requirements
 
 To use Quantum, you'll need:
@@ -50,6 +53,7 @@ To use Quantum, you'll need:
 -	npm | (Node comes with npm installed). Test: run ` npm -v`  in the terminal
 -	Gulp | `npm install -g gulp`
 
+
 ### Installing:
 
 - Clone this repo: `git clone https://github.com/dmoncado/quantum`
@@ -57,10 +61,11 @@ To use Quantum, you'll need:
 - Install all node packages: `npm install` or `sudo npm install`
 - Run `gulp dev`
 - Your site is now viewable at: http://localhost:3000
-- Build something great!
+- Build something great! (start from the HTML partials and styles with SCSS partials, go nuts!)
 
 NOTE:
 - To create compressed, concatenated, production-ready assets, run `gulp prod`. This will delete everything in the `dist` folder and recreate all of your complied files instantly. Never make updates directly into the dist folder as these files get overridden each time. Also, The dist folder is not kept in source control.
+
 
 ### Folder Structure:
 
@@ -70,7 +75,7 @@ NOTE:
 - `src/assets/` - scss files, JS files, images, and fonts
 - `src/layouts/` - HTML layouts templates
 - `src/pages/` - site pages
-- `src/partials/` - handlebars partials files.
+- `src/partials/` - handlebars partials files (HTML Partials).
 - `gulpfile.js` - all task definitions
 - `package.json` - handles the front-end dependencies
 - `.htmllintrc` - handles the HTML lint rules
