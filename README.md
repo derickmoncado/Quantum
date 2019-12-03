@@ -59,7 +59,7 @@ To use Quantum, you'll need:
 - Install all node packages: `npm install` or `sudo npm install`
 - Run `gulp dev`
 - Your site is now viewable at: http://localhost:3000
-- Build something great! (start from the HTML partials and styles with SCSS partials, just go nuts.)
+- Build something great! (start from the HTML partials and style with the SCSS partials, just go nuts.)
 
 NOTE:
 - To create compressed, concatenated, production-ready assets, run `gulp prod`. This will delete everything in the `dist` folder and recreate it with all of your complied files instantly. Never make updates directly into the dist folder as these files get overridden each time. Also, The dist folder is not kept in source control - check the .gitignore file to remove it.
