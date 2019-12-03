@@ -45,7 +45,7 @@ function compileSCSS() {
 	  includePaths: bourbon
 	}).on('error', sass.logError))
 	.pipe(autoprefixer('last 2 versions'))
-    .pipe(sourcemaps.write())
+	.pipe(sourcemaps.write())
 	.pipe(dest('dist/assets/css'))
 	.pipe(browserSync.stream());
 }
@@ -243,7 +243,8 @@ function concatScripts() {
 	  'src/assets/vendor/js/jquery.js',
 	  'src/assets/vendor/js/popper.js',
 	  'src/assets/vendor/js/bootstrap.js',
-      'src/assets/vendor/js/slick.js',
+	  'src/assets/vendor/js/slick.js',
+	  'src/assets/vendor/js/emergence.js',
 	  'src/assets/js/*'
 	])
 	.pipe(sourcemaps.init())

@@ -20,9 +20,4 @@ $(document).ready(function() {
 		slidesToShow: 1,
 		slidesToScroll: 1
 	});
-
-	// Initiate Emergence.js
-	emergence.init({
-		elemCushion: 0.75, // how much of element needs to be visible (%) for emergence to kick in
-	});
 });
