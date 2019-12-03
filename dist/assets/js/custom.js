@@ -17,5 +17,10 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1
+  }); // Emergence.js Initialization
+
+  emergence.init({
+    elemCushion: 0.75 // how much of element needs to be visible (%) for emergence to kick in
+
   });
 });
