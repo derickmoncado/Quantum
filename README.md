@@ -27,7 +27,7 @@ Quantum is a lightweight starter kit focused on automated frontend web developme
 -	Handlebars HTML templates with Panini. Panini is a super simple flat file generator for use with Gulp. It compiles a series of HTML pages using a common layout. These pages can also include HTML partials (rejoice), external Handlebars helpers, or external data as JSON.
 -	Sass compilation, prefixing with Autoprefixer, and JavaScript concatenation
 -	Built-in BrowserSync server - this will automatically reload your page when files are changed. It also live-injects CSS changes when you save a Sass file. This task runs continuously and defaults to localhost.
--	CSS compression, JavaScript compression, Image compression, script concatenation and more.
+-	CSS compression, JavaScript compression, Image compression and more.
 
 
 ### How to use
@@ -62,7 +62,7 @@ To use Quantum, you'll need:
 - Build something great! (start from the HTML partials and style with the SCSS partials, just go nuts.)
 
 NOTE:
-- To create compressed, concatenated, production-ready assets, run `gulp prod`. This will delete everything in the `dist` folder and recreate it with all of your complied files instantly. Never make updates directly into the dist folder as these files get overridden each time. Also, The dist folder is not kept in source control - check the .gitignore file to remove it.
+- Once a project is nearing completion and you want to create compressed, concatenated, production-ready files, run `gulp prod`. This will delete everything in the `dist` folder and recreate it instantly with all of your working files compiled. Never make updates directly into the dist folder as these files get overridden each time. Also, The dist folder is not kept in source control - check the .gitignore file to remove it if you'd like.
 
 
 ### Folder Structure:
@@ -79,3 +79,5 @@ NOTE:
 - `.htmllintrc` - handles the HTML lint rules
 - `.sass-lint.yml` - handles the SCSS lint rules
 - `reports` - txt generated file for accessibility issues (when you run the gulp task for it)
+
+Happy Coding 🤓
