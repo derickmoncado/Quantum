@@ -1,16 +1,17 @@
 # Quantum — A Boilerplate for Front End Developers
-Quantum is a Bootstrapped, Gulp-powered, Sassified, front end boilerplate that's focused on automated static web development. It comes with Browsersync, hot reloading, Slick carousel, the Bourbon Sass library, and is all built on top of Handlebars.js for easy HTML templating 🔥
+Quantum is a Bootstrapped, Gulp-powered, Sassified, front end boilerplate that's focused on automated web development. It comes with Browsersync, hot reloading, Slick carousel, and much more. Quantum is also all built on top of Handlebars.js for easy HTML templating 🔥
 
-### Baked-in Features
+### Baked-in Features:
 
 * Bootstrap 4
 * Gulp 4
 * Sass
 * Bourbon
 * Handlebars.js
-* Slick Carousel
 * Emergence.js
+* Slick Carousel
 * Browsersync + hot reloading
+* Animate.css
 * Compilation
 * Autoprefixing
 * Sourcemaps
