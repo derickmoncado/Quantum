@@ -40,7 +40,7 @@ To use Quantum, you'll need:
 -	Gulp | `npm install -g gulp`
 
 
-### Installing:
+### Installing & Use:
 
 - Clone this repo: `git clone https://github.com/dmoncado/quantum`
 - Navigate into the repo directory: `cd quantum`
@@ -49,21 +49,18 @@ To use Quantum, you'll need:
 - Your site is now viewable at: http://localhost:3000
 - Build something great! (start from the HTML partials and style with the SCSS partials, just go nuts.)
 
-NOTE:
-- Once a project is nearing completion and you want to create compressed, concatenated, production-ready files, run `gulp prod`. This will delete everything in the `dist` folder and recreate it instantly with all of your working files compiled. Never make updates directly into the dist folder as these files get overridden each time. Also, The dist folder is not kept in source control - check the .gitignore file to remove it if you'd like.
-
-
-### How to use
-
 🚨 Changes should be committed to `src/` files only! 🚨
 
-Primary Gulp tasks to run are:
+Primary Gulp tasks are:
 -	`gulp dev` for general development
--	`gulp prod` for production builds (compiles, minifies, concatenates everything into a folder called `/dist` etc.)
+-	`gulp prod` for production builds (compiles, minifies, and concatenates everything into a folder called `/dist`)
 
-There is also:
+...There is also:
 -	`gulp linters` to run all linting tasks for HTML, SCSS, and JS
 -	`gulp accessibility` to run accessibility tasks that creates an accessibility report .txt file in a folder called `reports`
+
+NOTE:
+- Once a project is nearing completion and you want to create compressed, concatenated, production-ready files, run `gulp prod`. This will delete everything in the `dist` folder and recreate it instantly with all of your working files compiled. Never make updates directly into the dist folder as these files get overridden each time. Also, The dist folder is not kept in source control - check the .gitignore file to remove it if you'd like.
 
 
 ### Folder Structure:
