@@ -11,7 +11,7 @@
 		"url": "https://github.com/dmoncado/quantum"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.8.7",
+		"@babel/core": "^7.9.0",
 		"ansi-colors": "^4.1.1",
 		"babel-core": "^6.26.3",
 		"babel-polyfill": "^6.26.0",
@@ -47,15 +47,15 @@
 	},
 	"dependencies": {
 		"animate.css": "^3.7.2",
-		"bootstrap": "^4.3.1",
-		"clean-css": "^4.2.1",
+		"bootstrap": "^4.4.1",
+		"clean-css": "^4.2.3",
 		"emergence.js": "^1.1.2",
-		"eslint": "^6.5.1",
+		"eslint": "^6.8.0",
 		"gulp": "^4.0.2",
 		"jquery": "^3.4.1",
 		"lodash": "^4.17.15",
 		"lodash.template": "^4.5.0",
-		"popper.js": "^1.16.0",
+		"popper.js": "^1.16.1",
 		"slick-carousel": "^1.8.1"
 	}
 }
