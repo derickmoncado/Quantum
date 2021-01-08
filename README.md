@@ -1,3 +1,5 @@
+![Quantum sample home page](https://github.com/dmoncado/Quantum/blob/master/src/assets/images/quantum-home.png?raw=true)
+
 # Quantum — A Boilerplate for Front End Developers
 Quantum is a Bootstrapped, Gulp-powered, Sassified, front end boilerplate that's focused on automated web development. It comes with Browsersync, hot reloading, Slick carousel, and much more. Quantum is also all built on top of Handlebars.js + Panini for easy HTML templating 🔥
 
