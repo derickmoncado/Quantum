@@ -1,7 +1,7 @@
 {
 	"name": "quantum",
 	"version": "1.0.0",
-	"description": "Quantum is a Bootstrapped, Gulp-powered, Sassified, frontend boilerplate with Browsersync, hot reloading, and the Bourbon Sass library. All built on top of Handlebars.js for easy HTML templating.",
+	"description": "Quantum is a Bootstrapped, Gulp-powered, Sassified, frontend boilerplate with Browsersync and hot reloading. All built on top of Handlebars.js for easy HTML templating.",
 	"main": "index.js",
 	"scripts": {},
 	"author": "Derick Moncado",
@@ -41,7 +41,6 @@
 		"gulp-uglify": "^3.0.2",
 		"gulp-uglify-es": "^2.0.0",
 		"jshint": "^2.12.0",
-		"node-bourbon": "^4.2.8",
 		"panini": "^1.7.1",
 		"run-sequence": "^2.2.1"
 	},

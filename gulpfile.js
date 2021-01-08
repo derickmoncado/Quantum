@@ -6,7 +6,6 @@ const log           = require('fancy-log');
 const colors        = require('ansi-colors');
 const browserSync   = require('browser-sync').create();
 const sass          = require('gulp-sass');
-const bourbon       = require('node-bourbon').includePaths;
 const cssmin        = require('gulp-cssmin');
 const rename        = require('gulp-rename');
 const concat        = require('gulp-concat');
@@ -42,7 +41,6 @@ function compileSCSS() {
 	  outputStyle: 'expanded',
 	  sourceComments: 'map',
 	  sourceMap: 'scss',
-	  includePaths: bourbon
 	}).on('error', sass.logError))
 	.pipe(autoprefixer('last 2 versions'))
 	.pipe(sourcemaps.write())
