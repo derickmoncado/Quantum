@@ -26,9 +26,9 @@ Quantum is a Bootstrapped, Gulp-powered, Sassified, front end boilerplate that's
 
 Quantum is a lightweight starter kit focused on automated frontend web development and has the following primary features:
 
--	Handlebars HTML templates with Panini. Panini is a super simple flat file generator for use with Gulp. It compiles a series of HTML pages using a common layout. These pages can also include HTML partials (rejoice), external Handlebars helpers, or external data as JSON.
 -	Sass compilation and prefixing with Autoprefixer using Sass 7-1 architecture pattern, and JavaScript concatenation + minification.
 -	Built-in BrowserSync server - this will automatically reload your page when files are changed. It also live-injects CSS changes when you save a Sass file. This task runs continuously and defaults to localhost.
+-	Handlebars HTML templates with Panini. Panini is a super simple flat file generator for use with Gulp. It compiles a series of HTML pages using a common layout. These pages can also include HTML partials (rejoice), external Handlebars helpers, or external data as JSON.
 -	CSS compression, JavaScript compression, Image compression and more.
 
 
