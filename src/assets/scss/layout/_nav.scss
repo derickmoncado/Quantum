@@ -4,6 +4,17 @@
 
 .navbar {
     padding: 20px;
+
+    .nav-item {
+
+      @include media-breakpoint-up(lg) {
+        margin-right: 10px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
 }
 
 .fixed-top {

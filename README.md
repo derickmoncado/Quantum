@@ -8,11 +8,12 @@ Quantum is a Bootstrapped, Gulp-powered, Sassified, front end boilerplate that's
 * Bootstrap 4
 * Gulp 4
 * Sass
-* Handlebars.js
-* Emergence.js
 * Slick Carousel
 * Browsersync + hot reloading
+* Mobile responsive navigation
 * Animate.css
+* Emergence.js
+* Handlebars.js
 * Compilation
 * Autoprefixing
 * Sourcemaps
