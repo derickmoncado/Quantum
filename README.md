@@ -1,17 +1,18 @@
 ![Quantum sample home page](https://github.com/dmoncado/Quantum/blob/master/src/assets/images/quantum-home.png?raw=true)
 
 # Quantum — A Boilerplate for Front End Developers
-Quantum is a Bootstrapped, Gulp-powered, Sassified, front end boilerplate that's focused on automated web development. It comes with Browsersync, hot reloading, Slick carousel, and much more. Quantum is also all built on top of Handlebars.js + Panini for easy HTML templating 🔥
+Quantum is a Bootstrapped, Gulp-powered, Sassified, front end boilerplate that's focused on automated web development. It comes with Browsersync, hot reloading, Slick carousel, and much more. Quantum is also all built on top of Handlebars.js + Panini for easy HTML templating {{  }}
 
 ### Baked-in Features:
 
 * Bootstrap 4
 * Gulp 4
 * Sass
-* Handlebars.js
 * Emergence.js
 * Slick Carousel
 * Browsersync + hot reloading
+* Handlebars.js (HTML templates)
+* Popper.js
 * Animate.css
 * Compilation
 * Autoprefixing
@@ -24,12 +25,14 @@ Quantum is a Bootstrapped, Gulp-powered, Sassified, front end boilerplate that's
 
 ### Details
 
-Quantum is a lightweight starter kit focused on automated frontend web development and has the following primary features:
+Quantum's primary features:
 
--	Handlebars HTML templates with Panini. Panini is a super simple flat file generator for use with Gulp. It compiles a series of HTML pages using a common layout. These pages can also include HTML partials (rejoice), external Handlebars helpers, or external data as JSON.
--	Sass compilation and prefixing with Autoprefixer using Sass 7-1 architecture pattern, and JavaScript concatenation + minification.
+- Build on top of Bootstrap with baked-in mobile navigation.
+-	Sass compilation and prefixing with Autoprefixer (using Sass 7-1 folder architecture pattern).
+- CSS compression after all SCSS is compiled.
+- JavaScript concatenation + minification.
 -	Built-in BrowserSync server - this will automatically reload your page when files are changed. It also live-injects CSS changes when you save a Sass file. This task runs continuously and defaults to localhost.
--	CSS compression, JavaScript compression, Image compression and more.
+-	Handlebars HTML templates with Panini. Panini is a super simple flat file generator for use with Gulp. It compiles a series of HTML pages using a common layout. These pages can also include HTML partials (rejoice!), external Handlebars helpers, or external data as JSON.
 
 
 ### Requirements
@@ -75,8 +78,8 @@ NOTE:
 - `src/partials/` - handlebars partials files (HTML Partials)
 - `gulpfile.js` - all task definitions
 - `package.json` - handles the front-end dependencies
-- `.htmllintrc` - handles the HTML lint rules
+- `.htmllintrc` - handles the HTML lint rules (for when you run the `gulp linters`)
 - `.sass-lint.yml` - handles the SCSS lint rules
-- `reports` - txt generated file for accessibility issues (when you run the gulp task for it)
+- `reports` - txt generated file for accessibility issues (for when you run the `gulp accessibility`)
 
-Happy Coding 🤓
+Happy Coding </>
