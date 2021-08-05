@@ -3,6 +3,23 @@
 // -----------------------------------------------------------------------------
 
 header {
-    padding: 50px 0;
-    background-color: #f2f2f2;
+
+  .navbar {
+    padding: 20px;
+
+    .nav-item {
+
+      @include media-breakpoint-up(lg) {
+        margin-right: 10px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .fixed-top {
+    border-bottom: 1px solid $light-grey;
+  }
 }

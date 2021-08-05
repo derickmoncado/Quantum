@@ -3,12 +3,32 @@ Layout: default
 Title: home (index.html)
 ---
 
-{{> header}}
+<!--- Carousel --->
+<section class="home-carousel">
+	<div class="container text-center">
+		<div class="home-slick-carousel">
+			<div>
+				<h1 class="display-4">Welcome to Quantum</h1>
+				<p class="lead">A <strong>super</strong> lightweight, static frontend starter kit that's focused on automated web developement</p>
+			</div>
+			 <div>
+				<h2>Quantum is built with Bootstrap, Gulp, and Sass</h2>
+				<p class="lead">With lots of other super handy plugins for automation, concatenation, <br />minification, and quicker dev time.</p>
+			</div>
+			<div>
+				<h2>Quantum also features:</h2>
+				<p class="lead">Browsersync, hot reloading, Slick carousel, Animate.css and much more. <br /> Everything is built on top of Handlebars.js for easy HTML templating 🔥</p>
+			</div>
+		</div>
+	</div>
+</section>
 
 <!--- Body --->
 <section>
 	<div class="container">
 		<h2>Your Home Page</h2>
+		<i class="bi bi-arrow-down-circle"></i> <i class="bi-alarm"></i>
+		<img src="/assets/img/bootstrap.svg" alt="Bootstrap" width="32" height="32">
 		<p class="lead">I see you ran <code>gulp dev</code>, this is <strong>your site</strong>, seriously. You're ready to go.</p>
 		<br />
 
