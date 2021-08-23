@@ -1,20 +1,15 @@
 <!--- Base layout, used on every page --->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Launchpad - A Front End Starter Kit</title>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="author" content="Derick Moncado" />
-    <meta
-      name="description"
-      content="Launchpad - A frontend starter kit that's focused on automated web developement."
-    />
+    <meta name="description" content="Launchpad - A frontend starter kit that's focused on automated web developement." />
     <meta name="keywords" content="keywords,here" />
     <link rel="favicon" href="images/favicons/favicon.ico" type="" />
 
@@ -34,125 +29,102 @@
     <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-  </head>
+</head>
 
-  <body>
+<body>
     <!--- Header --->
     <header>
-    	<!--- Navigation --->
-    	<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-    	  <div class="container">
-    	    <a class="navbar-brand" href="index.html">
-    	      <img
-    	        src="assets/images/launchpad-logo.png"
-    	        width="250"
-    	        height="auto"
-    	        alt="Static Site Starter"
-    	      />
-    	      <span class="sr-only">Static Site Starter</span>
-    	    </a>
-    
-    	    <button
-    	      class="navbar-light navbar-toggler"
-    	      type="button"
-    	      data-toggle="collapse"
-    	      data-target="#navbars-default"
-    	      aria-controls="navbars-default"
-    	      aria-expanded="false"
-    	      aria-label="Toggle navigation"
-    	    >
-    	      <span class="navbar-toggler-icon"></span>
-    	    </button>
-    
-    	    <div class="collapse navbar-collapse" id="navbars-default">
-    	      <ul class="navbar-nav ml-auto align-items-center">
-    	        <li class="nav-item">
-    	          <a class="nav-link" href="/index.html">Home</a>
-    	        </li>
-    	        <li class="nav-item">
-    	          <a class="nav-link" href="/about.html">About</a>
-    	        </li>
-    	        <li class="nav-item dropdown">
-    	          <a
-    	            class="nav-link dropdown-toggle"
-    	            href="/blog.html"
-    	            id="navbarDropdownMenuLink"
-    	            role="button"
-    	            data-toggle="dropdown"
-    	            aria-haspopup="true"
-    	            aria-expanded="false"
-    	            >Dropdown</a
-    	          >
-    
-    	          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-    	            <li><a class="dropdown-item" href="/a-page.html">A Page</a></li>
-    	            <li>
-    	              <a class="dropdown-item" href="/another-page.html"
-    	                >Another Page</a
-    	              >
-    	            </li>
-    	            <li>
-    	              <a class="dropdown-item" href="/yet-another-page.html"
-    	                >Yet Another Page</a
-    	              >
-    	            </li>
-    	          </ul>
-    	        </li>
-    	        <li class="nav-item">
-    	          <a class="nav-link" href="/contact.html">Contact</a>
-    	        </li>
-    	      </ul>
-    	    </div>
-    	  </div>
-    	</nav>
+        <!--- Navigation --->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/launchpad-logo.png" width="250" height="auto" alt="Static Site Starter" />
+                    <span class="sr-only">Static Site Starter</span>
+                </a>
+
+                <button class="navbar-light navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-default" aria-controls="navbars-default" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbars-default">
+                    <ul class="navbar-nav ml-auto align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/blog.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="/a-page.html">A Page</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="/another-page.html">Another Page</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/yet-another-page.html">Yet Another Page</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main role="main">
-      
-      <!--- Contact Page --->
-      <section class="mt-4 mb-5">
-      	<div class="container mb-4">
-      		<h2 class="display-4">Your Contact Page</h2>
-      		<p class="lead">...or whatever you want this page to be. Put your content here.</p>
-      	</div>
-      </section>
-      
+
+        <!--- Contact Page --->
+        <section class="mt-4 mb-5">
+            <div class="container mb-4">
+                <h2 class="display-4">Your Contact Page</h2>
+                <p class="lead">...or whatever you want this page to be. Put your content here.</p>
+            </div>
+        </section>
+
     </main>
 
     <!--- Footer --->
-    <footer class="footer pt-5 pb-5 text-center" data-emergence="hidden"> <!--- Emergence.js data attr --->
-    	<div class="container">
-    		<h4>Footer</h4>
-    		<p>
-    			Has the <code>Emergence.js</code> data attribute appended to it.<br /> (background color changes when it scrolls 75% into viewport) <br />
-    			<small>Us this cool feature to manipulate styles on elements when they enter the viewport. Or don't, It's totally optional.</small> <br />
-    			<small>For more details and the docs, click <a target="_blank" href="https://github.com/xtianmiller/emergence.js">here.</a></small>
-    		</p>
-    	</div>
+    <footer class="footer pt-5 pb-5 text-center" data-emergence="hidden">
+        <!--- Emergence.js data attr --->
+        <div class="container">
+            <h4>Footer</h4>
+            <p>
+                Has the <code>Emergence.js</code> data attribute appended to it.<br /> (background color changes when it scrolls 75% into viewport) <br />
+                <small>Us this cool feature to manipulate styles on elements when they enter the viewport. Or don't, It's totally optional.</small> <br />
+                <small>For more details and the docs, click <a target="_blank" href="https://github.com/xtianmiller/emergence.js">here.</a></small>
+            </p>
+        </div>
     </footer>
-    
+
     <!--- Scripts - scrips inbetween these special tags get compiled + concatenated --->
     <!-- build:js -->
     <script src="assets/vendor/js/popper.js"></script>
+    <script src="assets/vendor/js/jquery.js"></script>
     <script src="assets/vendor/js/bootstrap.js"></script>
     <script src="assets/vendor/js/slick.js"></script>
     <script src="assets/vendor/js/emergence.js"></script>
     <script src="assets/js/custom.js"></script>
     <!-- endbuild -->
-    
-    
+
+
     <!--- Init Emergence --->
     <script>
-    	emergence.init({
-    		elemCushion: 0.75 // how much of element needs to be visible (%) for emergence to kick in
-    	});
+        emergence.init({
+            elemCushion: 0.75 // how much of element needs to be visible (%) for emergence to kick in
+        });
     </script>
-  </body>
+</body>
+
 </html>
