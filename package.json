@@ -45,6 +45,7 @@
 		"run-sequence": "^2.2.1"
 	},
 	"dependencies": {
+		"@popperjs/core": "^2.10.1",
 		"animate.css": "^4.1.1",
 		"bootstrap": "^5.0.0-alpha1",
 		"bootstrap-icons": "^1.5.0",
